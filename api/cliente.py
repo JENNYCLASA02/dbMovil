@@ -19,7 +19,7 @@ def save():
     new_cliente = Cliente(nombre)
     db.session.add(new_cliente)
     db.session.commit()    
-    return "datos guardado con exito"
+    return "Datos guardados con éxito"
 
 @ruta_clientes.route('/updatecliente', methods=['PUT'])
 def Update():
@@ -30,7 +30,7 @@ def Update():
         print(cliente) 
         cliente.nombre = nombre
         db.session.commit()
-        return "Datos actualizado con exitos"
+        return "Datos actualizados con éxitos"
     else:
         return "Error"
 
